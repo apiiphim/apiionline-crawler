@@ -1,0 +1,29 @@
+{
+    "name": "apiiphim/apii-crawler",
+    "description": "apii crawler",
+    "type": "package",
+    "require": {
+        "hacoidev/apii-core": "^1.0.0",
+        "intervention/image": "^2.7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ApiiOnline\\Crawler\\ApiiOnlineCrawler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "apiiphim",
+            "email": "apii.phim@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ApiiOnline\\Crawler\\ApiiOnlineCrawler\\ApiiOnlineCrawlerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
