@@ -23,10 +23,10 @@ class ApiiOnlineCrawlerServiceProvider extends SP
     {
 
         config(['plugins' => array_merge(config('plugins', []), [
-            'hacoidev/apii-crawler' =>
+            'apiiphim/apii-crawler' =>
             [
                 'name' => 'ApiiOnline Crawler',
-                'package_name' => 'hacoidev/apii-crawler',
+                'package_name' => 'apiiphim/apii-crawler',
                 'icon' => 'la la-hand-grab-o',
                 'entries' => [
                     ['name' => 'Crawler', 'icon' => 'la la-hand-grab-o', 'url' => backpack_url('/plugin/apii-crawler')],
@@ -38,7 +38,7 @@ class ApiiOnlineCrawlerServiceProvider extends SP
         config(['logging.channels' => array_merge(config('logging.channels', []), [
             'apii-crawler' => [
                 'driver' => 'daily',
-                'path' => storage_path('logs/hacoidev/apii-crawler.log'),
+                'path' => storage_path('logs/apiiphim/apii-crawler.log'),
                 'level' => env('LOG_LEVEL', 'debug'),
                 'days' => 7,
             ],
