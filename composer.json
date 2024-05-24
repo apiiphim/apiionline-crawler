@@ -3,7 +3,7 @@
     "description": "apii crawler",
     "type": "package",
     "require": {
-        "apiiphim/apii-core": "v2.0.0",
+        "apiiphim/apii-core": "2.0",
         "intervention/image": "^2.7"
     },
     "license": "MIT",
